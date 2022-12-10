@@ -1,0 +1,13 @@
+version: "3"
+services:
+        web:
+          build: .
+          image: webimage
+          ports:
+            - 8090:80
+          container_name: c1    
+          restart: always
+          volumes:
+            - chaituvol1:/var/www/html
+volumes:
+   chaituvol1: {}  
